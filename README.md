@@ -82,6 +82,7 @@ Run the script with `your-file-name.py` and follow the on-screen prompts to inpu
 - Ensure you have a `.env` file with the correct Mixpanel API secret.
 - Ensure the date format for input is YYYY-MM-DD.
 - Ensure that you have the right Mixpanel URL Export for EU or USA.
+- Use this URL for more information / details: https://developer.mixpanel.com/reference/raw-event-export
 
 ## Credits and Acknowledgements
 
