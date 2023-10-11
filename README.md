@@ -1,57 +1,55 @@
-# Mixpanel API Export
+# Mixpanel API Export to CSV and Excel
 
-## Description
+## Overview
+This Python 3.x script fetches data from the Mixpanel API and exports it to both CSV and Excel formats. The script can be run in any environment that supports Python 3.x and the required libraries.
 
-This Python script fetches and exports data from the Mixpanel API to CSV and Excel formats. It is designed to be easily run from the command line and requires minimal setup.
-
-## Requirements
-
+## System Requirements
 - Python 3.x
-- `requests`
-- `pandas`
-- `openpyxl`
-- `python-dotenv`
-
-## Installation
-
-1. Clone this repository to your local machine.
-    ```
-    git clone https://github.com/jplantenga/Mixpanel-API-Export.git
-    ```
-2. Navigate to the cloned directory.
-    ```
-    cd Mixpanel-API-Export
-    ```
-3. Install the required Python packages.
-    ```
-    pip install -r requirements.txt
-    ```
-
-## Usage
-
-1. Add your Mixpanel API Secret to a `.env` file in the root directory:
-    ```
-    MIXPANEL_API_SECRET=your-secret-key
-    ```
-2. Run the script.
-    ```
-    python your-file-name.py
-    ```
+- Operating System: Windows, macOS, or Linux
 
 ## Features
+- Fetches data between a user-specified date range.
+- Exports the data to a CSV file.
+- Also exports the data to an Excel file with adjusted column widths.
+- Error handling to catch common issues.
 
-- Retrieves data between user-specified date ranges.
-- Outputs data to CSV and Excel formats.
-- Automatically adjusts column widths in the Excel output.
+## Dependencies
+The following Python libraries are used:
+- os
+- json
+- base64
+- requests
+- pandas
+- datetime
+- dotenv
+- openpyxl
 
-## Contributing
+## Setup
+1. Clone the repository.
+2. Navigate to the project directory.
+3. Run `pip install -r requirements.txt` to install dependencies.
 
-Contributions, issues, and feature requests are welcome!
+### Environmental Variables
+Create a `.env` file in the project directory and add the following:
+```
+MIXPANEL_API_SECRET=your_mixpanel_api_secret_here
+```
 
-## License
+## Usage
+Run the script with `your-file-name.py` and follow the on-screen prompts to input the date range for data fetching.
 
-This project is under the [MIT License](LICENSE).
+### Output
+- The CSV file will be saved to `/path/to/your/csv/file.csv`
+- The Excel file will be saved to `/path/to/your/excel/file.xlsx`
+
+## Troubleshooting
+- Ensure you have a `.env` file with the correct Mixpanel API secret.
+- Ensure the date format for input is YYYY-MM-DD.
+
+## Credits and Acknowledgements
+This project was inspired by various Mixpanel API implementations and aims to make the data fetching and exporting process as seamless as possible.
+
+## Contact Information
+For questions, issues, or contributions, please contact via GitHub.
 
 ---
-
-Would you like to proceed with those steps?
